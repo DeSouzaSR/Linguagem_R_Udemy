@@ -63,3 +63,9 @@ jan %*% fev[-1,] # Agora sim, dimensões compatíveis
 # ---- Curiosidades
 A <- matrix(0, nrow = 5, ncol = 10)
 image(A)
+
+B <- matrix(sample(25),nrow = 5, ncol = 5)
+image(B)
+
+C <- matrix(sample(400), nrow = 20)
+image(C)
