@@ -69,3 +69,18 @@ image(B)
 
 C <- matrix(sample(400), nrow = 20)
 image(C)
+
+# ---- Contorno da matriz
+contour(B)
+
+
+# ---- Solução de sistemas
+#3x + 2y = 8
+# x +  y = 2
+
+linha1 <- c(3, 2, 8)
+linha2 <- c(1, 1, 2)
+
+sistema <- rbind(linha1, linha2)
+solucao <- solve(sistema[,1:2], sistema[,3])
+cat(solucao)
